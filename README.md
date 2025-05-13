@@ -39,6 +39,12 @@ The project uses the following datasets:
    git clone https://github.com/yourusername/email-spam-detection.git
    cd email-spam-detection
 ## Output:
+![Email Spam Example](figures/r1.png)
+![Email Spam Example](figures/r2.png)
+![Email Spam Example](figures/r3.png)
+![Email Spam Example](figures/r4.png)
+![Email Spam Example](figures/r5.png)
+
 
 
 
