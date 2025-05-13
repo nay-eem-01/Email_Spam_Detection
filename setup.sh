@@ -14,3 +14,9 @@ headless = true\n\
 
 # Download NLTK data listed in nltk.txt
 python -c "import nltk; [nltk.download(line.strip()) for line in open('nltk.txt')]"
+
+
+#!/bin/bash
+# Install necessary NLTK data
+python -m nltk.downloader punkt stopwords
+

@@ -5,12 +5,12 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-# Download NLTK resources if not present
+# Ensure NLTK resources are downloaded at runtime
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
 except LookupError:
-    nltk.download('punkt')
+    nltk.download('punkt')  # Correct resource name for tokenizer
     nltk.download('stopwords')
 
 # Initialize the PorterStemmer
