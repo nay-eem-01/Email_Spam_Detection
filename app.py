@@ -1,17 +1,13 @@
 import streamlit as st
 import pickle
 import string
-import download_nltk
-from download_nltk.corpus import stopwords
-from download_nltk.stem.porter import PorterStemmer
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+import os
 
-# Ensure NLTK resources are downloaded at runtime
-try:
-    nltk.data.find('tokenizers/punkt')
-    nltk.data.find('corpora/stopwords')
-except LookupError:
-    nltk.download('punkt')  # Correct resource name for tokenizer
-    nltk.download('stopwords')
+# Configure NLTK data path
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
 
 # Initialize the PorterStemmer
 ps = PorterStemmer()
