@@ -46,6 +46,10 @@ The project uses the following datasets:
 ![Email Spam Example](figures/r5.png)
 
 
+#### Live Link: 
+https://email-spam-detection-n801.onrender.com/
+
+
 
 
 
